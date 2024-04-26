@@ -13,8 +13,10 @@ require("lazy").setup({
   {"sainnhe/gruvbox-material"},
   {
     "zbirenbaum/copilot.lua",
+    cmd="Copilot",
+    event="InsertEnter",
     config = function()
-      require("copilot").setup()
+      require("copilot").setup({})
     end
   },
   -- {
