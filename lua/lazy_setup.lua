@@ -11,21 +11,6 @@ require("lazy").setup({
     },
   },
   {"sainnhe/gruvbox-material"},
-  {
-    "zbirenbaum/copilot.lua",
-    cmd="Copilot",
-    event="InsertEnter",
-    config = function()
-      require("copilot").setup({})
-    end
-  },
-  -- {
-  --   "zbirenbaum/copilot-cmp",
-  --   after = { "copilot.lua" },
-  --   config = function()
-  --     require("copilot_cmp").setup()
-  --   end
-  -- },
   "airblade/vim-gitgutter",
   { import = "community" },
   { import = "plugins" },
