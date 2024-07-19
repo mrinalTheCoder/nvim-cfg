@@ -3,7 +3,6 @@ return {
   options = {
     opt = {
       matchparen = true,
-      clipboard = "unnamedplus",
     },
     g = {
       gruvbox_material_background = "hard",
