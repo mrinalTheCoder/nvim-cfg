@@ -10,7 +10,17 @@ require("lazy").setup({
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
     },
   },
-  {"sainnhe/gruvbox-material"},
+  {
+    "sainnhe/gruvbox-material",
+    lazy=false,
+    priority=1000,
+    config = function()
+      vim.cmd("colorscheme gruvbox-material")
+      vim.g.gruvbox_material_background = "hard"
+      vim.g.gruvbox_material_foreground = "material"
+      vim.g.gruvbox_material_better_performance = 1
+    end
+  },
   "airblade/vim-gitgutter",
   { import = "community" },
   { import = "plugins" },
