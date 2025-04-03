@@ -1,34 +1,13 @@
-# AstroNvim Template
+# Neovim config that I use everyday
 
-**NOTE:** This is for AstroNvim v4+
+## Setup Instructions
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+1. Install Neovim and then AstroNvim.
+2. Install node (for Copilot)
+3. Clone this repository into the `~/.config/nvim` folder.
 
-## 🛠️ Installation
-
-#### Make a backup of your current nvim and shared folder
-
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
-```
-
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
+## Features and changes (compared to Astronvim)
+1. Gruvbox colorscheme
+2. Github copilot extension using the `<Tab>` key for completion (in insertion mode)
+3. `utf-16` encoding (fixes bugs in `clangd`)
+4. PlatformIO plugin for working on firmware on embedded controllers such as Arduino, Teensy, etc.
