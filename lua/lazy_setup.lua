@@ -21,6 +21,11 @@ require("lazy").setup({
       vim.g.gruvbox_material_better_performance = 1
     end
   },
+  {
+    "mrinalTheCoder/veil.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   "airblade/vim-gitgutter",
   { import = "community" },
   { import = "plugins" },
