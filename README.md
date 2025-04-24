@@ -2,7 +2,7 @@
 
 ## Setup Instructions
 
-1. Install Neovim and then AstroNvim.
+1. Install Neovim following the instructions [here](https://github.com/neovim/neovim/blob/master/INSTALL.md).
 2. Install node (for Copilot)
 3. Clone this repository into the `~/.config/nvim` folder.
 
