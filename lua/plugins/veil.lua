@@ -1,5 +1,6 @@
 return {
-  'mrinalTheCoder/veil.nvim',
+  -- 'mrinalTheCoder/veil.nvim',
+  dir = "~/tools/veil.nvim",
   lazy = false,
   dependencies = {
     -- All optional, only required for the default setup.
