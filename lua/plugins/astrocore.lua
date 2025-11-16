@@ -1,3 +1,15 @@
+return {
+  "AstroNvim/astrocore",
+  options = {
+    mappings = {
+      i = {
+        ["<CR>"] = "copilot#Accept('\\<CR>')",
+      },
+    },
+  },
+}
+
+--[[
 if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
@@ -83,3 +95,5 @@ return {
     },
   },
 }
+]]
+--
