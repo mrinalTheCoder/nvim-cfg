@@ -3,12 +3,12 @@ return {
   cmd = "Copilot",
   event = "InsertEnter",
   config = function()
-    require("copilot").setup({
+    require("copilot").setup {
       suggestion = {
         enabled = true,
         auto_trigger = true,
         keymap = {
-          accept = "<Tab>",
+          accept = "<M-l>",
           next = "<M-]>",
           prev = "<M-[>",
           dismiss = "<C-]>",
@@ -18,11 +18,14 @@ return {
         enabled = true,
         auto_refresh = false,
       },
-    })
+    }
 
     -- Keybinding to toggle auto trigger
-    vim.keymap.set("n", "<leader>ct", function()
-      require("copilot.suggestion").toggle_auto_trigger()
-    end, { desc = "Toggle Copilot suggestions" })
+    vim.keymap.set(
+      "n",
+      "<leader>ct",
+      function() require("copilot.suggestion").toggle_auto_trigger() end,
+      { desc = "Toggle Copilot suggestions" }
+    )
   end,
 }
